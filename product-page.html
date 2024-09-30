@@ -2,14 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/lego-project/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lego Store</title>
-    <script type="module" crossorigin src="/lego-project/index.js"></script>
+    <title>Card products</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script type="module" crossorigin src="/lego-project/product-page.js"></script>
     <link rel="modulepreload" crossorigin href="/lego-project/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="modulepreload" crossorigin href="/lego-project/assets/cart-CkPm__2z.js">
-    <link rel="modulepreload" crossorigin href="/lego-project/assets/our-products-D29wU1Yv.js">
-    <link rel="stylesheet" crossorigin href="/lego-project/assets/index-Bj9gq02O.css">
   </head>
   <body>
     <header class="header">
@@ -54,43 +52,32 @@
 
 
     <main>
-      <section class="hero-home">
-  <div class="hero-container">
-    <h1 class="hero-title">sklep z lego</h1>
-    <a href="./pages/our-products-page.html" class="hero-link">do katalogu</a>
-  </div>
-</section>
-
-      <section class="about-us section" id="about">
-  <div class="container about-us-container">
-    <img src="/lego-project/assets/about-img-CC_u_w39.jpg" alt="" class="about-us-img" />
-    <div class="about-us-wrapper">
-      <h2 class="about-us-title main-title">O nas</h2>
-      <p class="about-us-text">
-        Jesteśmy sklepem oferującym różnorodne produkty, a naszą specjalizacją
-        są unikalne zestawy konstrukcyjne. Po dokładnym zbadaniu rynku
-        zauważyliśmy, że obecnie dużą popularnością cieszą się tematy związane z
-        grami online, automatami oraz szeroko pojętymi kasynami. Chcąc
-        dostosować naszą ofertę do najnowszych trendów, postanowiliśmy
-        wprowadzić na rynek wyjątkowe zestawy konstrukcyjne inspirowane światem
-        gier kasynowych. Nasze produkty łączą kreatywność z zabawą, umożliwiając
-        każdemu stworzenie własnego, unikalnego projektu opartego na motywach
-        gier hazardowych. Dbamy o jakość naszych produktów i wierzymy, że nasze
-        zestawy konstrukcyjne zainspirują zarówno miłośników gier, jak i
-        wszystkich poszukujących innowacyjnych rozwiązań.
-      </p>
-      <a href="../about-us-page.html" class="main-link">bliższy</a>
+      <section class="section">
+  <div class="container product-card-wrapper">
+    <div class="product-image">
+      <img id="product-image" src="placeholder.jpg" alt="Фото продукту" />
     </div>
-  </div>
-</section>
-
-      <section class="section" id="products">
-  <div class="container">
-    <h2 class="our-products-title main-title">nasze towary</h2>
-    <ul id="our-products" class="our-products-list"></ul>
-    <a href="./our-products-page.html" class="our-products-link main-link"
-      >przejdź do katalogu</a
-    >
+    <div class="product-info">
+      <h1 id="product-title" class="product-info-title"></h1>
+      <div class="product-label">
+        <span id="product-info-label" class="product-new">Новинка</span>
+      </div>
+      <div class="product-info-price">
+        <span id="product-price"></span>
+      </div>
+      <p id="product-description" class="product-info-description"></p>
+      <div class="product-options">
+        <label for="quantity">Кількість</label>
+        <input type="number" id="product-quantity" value="1" min="1" />
+        <label for="size">Вид</label>
+        <select id="product-size">
+          <option value="small">Малий</option>
+          <option value="medium">Середній</option>
+          <option value="large">Великий</option>
+        </select>
+      </div>
+      <button id="add-to-cart" class="add-to-cart-btn">Додати в кошик</button>
+    </div>
   </div>
 </section>
 
