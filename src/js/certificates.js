@@ -1,5 +1,7 @@
+import dataCertificates from '../data/certificates-data.json';
+
 // Функція для завантаження даних з JSON
-fetch('./data/certificates-data.json')
+fetch(dataCertificates)
   .then(response => response.json())
   .then(data => {
     const productsList = document.getElementById('certificates-list');
@@ -7,7 +9,6 @@ fetch('./data/certificates-data.json')
     data.certificates.forEach(certificate => {
       const li = document.createElement('li');
       li.classList.add('certificates-item');
-      li.classList.add('certificates-home-item');
       li.innerHTML = `
       <h3 class="certificates-item-title">${certificate.title}</h3>
         <div class="certificates-item-thumb">

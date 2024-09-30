@@ -1,2 +1,2 @@
-import './js/components/our-products';
-import './js/components/certificates';
+import './js/our-products';
+import './js/certificates';

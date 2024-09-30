@@ -50,12 +50,16 @@ img {
   line-height: 100%;
 }
 .basket-btn {
-  border: 1px solid #767676;
+  border: none;
   border-radius: 8px;
   padding: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
 
-  background-color: #e3e3e3;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  fill: #fff;
+  background-color: #02542d;
 }

@@ -3,3 +3,24 @@
   padding-bottom: 80px;
   border-top: 1px solid #d9d9d9;
 }
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-item-text {
+  margin-bottom: 16px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.footer-item-link {
+  font-size: 16px;
+  line-height: 140%;
+}
