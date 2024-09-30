@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
-
 // Функція для завантаження даних з JSON
 fetch('./data/products-data.json')
   .then(response => response.json())
