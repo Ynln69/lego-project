@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gift certificates</title>
-    <script type="module" crossorigin src="/gift-certificates-page.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="stylesheet" crossorigin href="/assets/styles-D0wdT35w.css">
+    <title>Dziękujemy za zakup!</title>
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -44,17 +42,12 @@
 
 
     <main>
-      <section class="hero-certificates">
-    <div class="hero-container">
-      <h1 class="hero-title">bony podarunkowe</h1>
-    </div>
-  </section>
-  
-      <section class="section" id="certificates">
-  <div class="container">
-    <h2 class="main-title certificates-title">bony podarunkowe</h2>
-    <ul id="certificates-list" class="certificates-list"></ul>
-  </div>
+      <section class="section">
+  <h1>Dziękujemy za zakup!</h1>
+  <p>
+    Twoje zamówienie zostało złożone. Numer zamówienia:
+    <span id="orderNumber"></span>
+  </p>
 </section>
 
     </main>
@@ -103,5 +96,11 @@
 </footer>
 
 
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const orderNumber = urlParams.get('orderNumber');
+
+      document.getElementById('orderNumber').textContent = orderNumber;
+    </script>
   </body>
 </html>

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basket</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <script type="module" crossorigin src="/assets/cart-count-Bzsmujp2.js"></script>
+    <script type="module" crossorigin src="/basket-page.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/assets/cart-count-Bzsmujp2.js">
   </head>
   <body>
     <header class="header">
@@ -45,8 +46,11 @@
 
     <main>
       <section class="section">
-  <div class="container">
+  <div class="container cart-container">
     <ul id="cart-list" class="cart-list"></ul>
+    <button type="button" class="basket-btn cart-btn" id="openModalBtn">
+      składać zamówienie
+    </button>
   </div>
 </section>
 
@@ -58,28 +62,36 @@
       <ul class="footer-nav-list">
         <li class="footer-nav-item">
           <p class="footer-item-text">główny</p>
-          <a href="#about">o nas</a>
-          <a href="#products">katalog</a>
-          <a href="#certificates">bony podarunkowe</a>
+          <a href="#about" class="footer-item-link">o nas</a>
+          <a href="#products" class="footer-item-link">katalog</a>
+          <a href="#certificates" class="footer-item-link">bony podarunkowe</a>
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">o nas</p>
-          <a href="./pages/about-us-page.html"> nasza historia</a>
+          <a href="./pages/about-us-page.html" class="footer-item-link">
+            nasza historia</a
+          >
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">katalog</p>
-          <a href="./pages/our-products-page.html"> wszystkie towary</a>
+          <a href="./pages/our-products-page.html" class="footer-item-link">
+            wszystkie towary</a
+          >
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">bony podarunkowe</p>
-          <a href="./pages/gift-certificates-page.html"
+          <a href="./pages/gift-certificates-page.html" class="footer-item-link"
             >certyfikaty elektroniczne</a
           >
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">łączność</p>
-          <a href="tel:+380173727477">+38(017)372-74-77</a>
-          <a href="mailto:legostore@icloud.com">legostore@icloud.com</a>
+          <a href="tel:+380173727477" class="footer-item-link"
+            >+38(017)372-74-77</a
+          >
+          <a href="mailto:legostore@icloud.com" class="footer-item-link"
+            >legostore@icloud.com</a
+          >
         </li>
       </ul>
     </nav>
@@ -87,6 +99,60 @@
   </div>
 </footer>
 
+    <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="orderForm" class="modal-form">
+        <label for="name" class="form-label">Pełne imię i nazwisko</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form-input"
+          placeholder="Wpisz swoje pełne imię i nazwisko"
+          required
+        />
+  
+        <label for="email" class="form-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-input"
+          placeholder="Wpisz swój adres e-mail"
+          required
+        />
+  
+        <label for="phone" class="form-label">Numer telefonu:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="form-input"
+          placeholder="Wpisz numer telefonu"
+          required
+        />
+  
+        <label for="delivery" class="form-label">Sposób dostawy:</label>
+        <select id="delivery" name="delivery" class="form-input" required>
+          <option value="delivery">Dostawa</option>
+          <option value="pickup">Ulec poprawie</option>
+        </select>
+  
+        <label for="comment" class="form-label">Komentarz:</label>
+        <textarea
+          id="comment"
+          name="comment"
+          class="form-input"
+          placeholder="Zostaw komentarz"
+        ></textarea>
+  
+        <button type="submit" class="basket-btn form-btn">Potwierdzać</button>
+      </form>
+    </div>
+  </div>
+
+  
 
   </body>
 </html>

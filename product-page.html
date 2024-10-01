@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <script type="module" crossorigin src="/product-page.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/assets/cart-count-Bzsmujp2.js">
   </head>
   <body>
     <header class="header">
@@ -45,32 +46,7 @@
 
     <main>
       <section class="section">
-  <div class="container product-card-wrapper">
-    <div class="product-image">
-      <img id="product-image" src="placeholder.jpg" alt="Фото продукту" />
-    </div>
-    <div class="product-info">
-      <h1 id="product-title" class="product-info-title"></h1>
-      <div class="product-label">
-        <span id="product-info-label" class="product-new">Новинка</span>
-      </div>
-      <div class="product-info-price">
-        <span id="product-price"></span>
-      </div>
-      <p id="product-description" class="product-info-description"></p>
-      <div class="product-options">
-        <label for="quantity">Кількість</label>
-        <input type="number" id="product-quantity" value="1" min="1" />
-        <label for="size">Вид</label>
-        <select id="product-size">
-          <option value="small">Малий</option>
-          <option value="medium">Середній</option>
-          <option value="large">Великий</option>
-        </select>
-      </div>
-      <button id="add-to-cart" class="add-to-cart-btn">Додати в кошик</button>
-    </div>
-  </div>
+  <div class="container product-card-wrapper" id="product-container"></div>
 </section>
 
     </main>
@@ -81,28 +57,36 @@
       <ul class="footer-nav-list">
         <li class="footer-nav-item">
           <p class="footer-item-text">główny</p>
-          <a href="#about">o nas</a>
-          <a href="#products">katalog</a>
-          <a href="#certificates">bony podarunkowe</a>
+          <a href="#about" class="footer-item-link">o nas</a>
+          <a href="#products" class="footer-item-link">katalog</a>
+          <a href="#certificates" class="footer-item-link">bony podarunkowe</a>
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">o nas</p>
-          <a href="./pages/about-us-page.html"> nasza historia</a>
+          <a href="./pages/about-us-page.html" class="footer-item-link">
+            nasza historia</a
+          >
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">katalog</p>
-          <a href="./pages/our-products-page.html"> wszystkie towary</a>
+          <a href="./pages/our-products-page.html" class="footer-item-link">
+            wszystkie towary</a
+          >
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">bony podarunkowe</p>
-          <a href="./pages/gift-certificates-page.html"
+          <a href="./pages/gift-certificates-page.html" class="footer-item-link"
             >certyfikaty elektroniczne</a
           >
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">łączność</p>
-          <a href="tel:+380173727477">+38(017)372-74-77</a>
-          <a href="mailto:legostore@icloud.com">legostore@icloud.com</a>
+          <a href="tel:+380173727477" class="footer-item-link"
+            >+38(017)372-74-77</a
+          >
+          <a href="mailto:legostore@icloud.com" class="footer-item-link"
+            >legostore@icloud.com</a
+          >
         </li>
       </ul>
     </nav>
