@@ -7,7 +7,7 @@
     <title>Basket</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <script type="module" crossorigin src="/lego-project/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <script type="module" crossorigin src="/lego-project/assets/cart-CkPm__2z.js"></script>
+    <script type="module" crossorigin src="/lego-project/assets/cart-count-Bzsmujp2.js"></script>
   </head>
   <body>
     <header class="header">
@@ -35,7 +35,7 @@
           >
         </li>
         <li class="nav-item"></li>
-          <a class="nav-link" href="./pages/gift-certificates-page.html"
+          <a class="nav-link" href="./gift-certificates-page.html"
             >
             bony podarunkowe</a
           >
@@ -46,6 +46,7 @@
       <svg width="24" height="24">
         <use href="/lego-project/assets/icon-defs-BTmQsz9u.svg#icon-shopping-cart"></use>
       </svg>
+      <span id="cart-count" class="cart-count"></span>
     </a>
   </div>
 </header>
@@ -54,7 +55,7 @@
     <main>
       <section class="section">
   <div class="container">
-    <ul id="cart-items"></ul>
+    <ul id="cart-list" class="cart-list"></ul>
   </div>
 </section>
 
@@ -80,7 +81,9 @@
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">bony podarunkowe</p>
-          <a href="./pages/gift-certificates-page.html">certyfikaty elektroniczne</a>
+          <a href="./pages/gift-certificates-page.html"
+            >certyfikaty elektroniczne</a
+          >
         </li>
         <li class="footer-nav-item">
           <p class="footer-item-text">łączność</p>
@@ -89,6 +92,7 @@
         </li>
       </ul>
     </nav>
+    <p class="footer-text">© Sklep-internetowy «LEGO STORE™» 2001–2024.</p>
   </div>
 </footer>
 

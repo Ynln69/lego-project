@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card products</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <script type="module" crossorigin src="/lego-project/product-page.js"></script>
+    <title>Gift certificates</title>
+    <script type="module" crossorigin src="/lego-project/gift-certificates-page.js"></script>
     <link rel="modulepreload" crossorigin href="/lego-project/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/lego-project/assets/styles-BBl5wb_s.css">
   </head>
   <body>
     <header class="header">
@@ -53,32 +53,16 @@
 
 
     <main>
-      <section class="section">
-  <div class="container product-card-wrapper">
-    <div class="product-image">
-      <img id="product-image" src="placeholder.jpg" alt="Фото продукту" />
+      <section class="hero-certificates">
+    <div class="hero-container">
+      <h1 class="hero-title">bony podarunkowe</h1>
     </div>
-    <div class="product-info">
-      <h1 id="product-title" class="product-info-title"></h1>
-      <div class="product-label">
-        <span id="product-info-label" class="product-new">Новинка</span>
-      </div>
-      <div class="product-info-price">
-        <span id="product-price"></span>
-      </div>
-      <p id="product-description" class="product-info-description"></p>
-      <div class="product-options">
-        <label for="quantity">Кількість</label>
-        <input type="number" id="product-quantity" value="1" min="1" />
-        <label for="size">Вид</label>
-        <select id="product-size">
-          <option value="small">Малий</option>
-          <option value="medium">Середній</option>
-          <option value="large">Великий</option>
-        </select>
-      </div>
-      <button id="add-to-cart" class="add-to-cart-btn">Додати в кошик</button>
-    </div>
+  </section>
+  
+      <section class="section" id="certificates">
+  <div class="container">
+    <h2 class="main-title certificates-title">bony podarunkowe</h2>
+    <ul id="certificates-list" class="certificates-list"></ul>
   </div>
 </section>
 
