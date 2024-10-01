@@ -34,3 +34,20 @@
   line-height: 100%;
   text-align: center;
 }
+
+.hero-certificates {
+  padding: 160px 0;
+
+  background-image: url(../../img/certificate-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #f5f5f5; */
+}
+.hero-about {
+  padding: 160px 0;
+
+  background-image: url(../../img/about-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #f5f5f5; */
+}

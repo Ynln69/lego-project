@@ -1,7 +1,5 @@
-import dataCertificates from '../data/certificates-data.json';
-
 // Функція для завантаження даних з JSON
-fetch(dataCertificates)
+fetch('./data/certificates-data.json')
   .then(response => response.json())
   .then(data => {
     const productsList = document.getElementById('certificates-list');

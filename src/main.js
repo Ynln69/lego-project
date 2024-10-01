@@ -1,2 +1,2 @@
 import './js/our-products';
-import './js/certificates';
+import './js/cart-count';

@@ -1,61 +1,55 @@
 {
     "certificates": [
         {
-            "title": "Назва сертифікату",
-            "description": "Опис товару",
+            "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           },
           {
-            "title": "Назва сертифікату",
-            "description": "Опис товару",
+            "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           },
           {
-            "title": "Назва сертифікату",
-            "description": "Опис товару",
+            "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           },
           {
-           "title": "Назва сертифікату",
-            "description": "Опис товару",
+           "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           }, {
-           "title": "Назва сертифікату",
-            "description": "Опис товару",
+           "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           },
           {
-            "title": "Назва сертифікату",
-            "description": "Опис товару",
+            "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           } ,
           {
-            "title": "Назва сертифікату",
-            "description": "Опис товару",
+            "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           },
           {
-            "title": "Назва сертифікату",
-            "description": "Опис товару",
+            "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           },
           {
-            "title": "Назва сертифікату",
-            "description": "Опис товару",
-            "price": "500  PLN",
-            "button": "w koszyku"
-          },
-          {
-           "title": "Назва сертифікату",
-            "description": "Опис товару",
+            "title": "Nazwa certyfikatu",
+            "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
           }

@@ -6,6 +6,7 @@
 .footer-nav-list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 .footer-nav-item {
   display: flex;
@@ -23,4 +24,9 @@
 .footer-item-link {
   font-size: 16px;
   line-height: 140%;
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
 }

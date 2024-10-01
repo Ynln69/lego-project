@@ -10,12 +10,13 @@
   margin-bottom: 48px;
 }
 .our-products-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
   border: 1px solid #d9d9d9;
   border-radius: 8px;
   padding: 24px;
-}
-.products-home-item:nth-child(n + 7) {
-  display: none;
 }
 
 .products-item-img {
@@ -48,6 +49,12 @@
   font-size: 16px;
   line-height: 140%;
   color: #757575;
+}
+.products-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
 }
 .products-item-btn {
   border: 1px solid #767676;
