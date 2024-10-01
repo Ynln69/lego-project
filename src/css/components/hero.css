@@ -20,6 +20,12 @@
   color: #f3f3f3;
   text-transform: uppercase;
 }
+.hero-text {
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+}
 .hero-link {
   display: block;
   width: 100%;
@@ -47,6 +53,14 @@
   padding: 160px 0;
 
   background-image: url(../../img/about-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #f5f5f5; */
+}
+.hero-thanks {
+  padding: 160px 0;
+
+  background-image: url(../../img/thanks-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   /* background-color: #f5f5f5; */
