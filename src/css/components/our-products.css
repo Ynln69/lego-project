@@ -17,6 +17,12 @@
   border: 1px solid #d9d9d9;
   border-radius: 8px;
   padding: 24px;
+
+  transition: transform, background-color 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    background-color: #d9d9d9;
+  }
 }
 
 .products-item-img {
@@ -73,3 +79,4 @@
   margin-right: auto;
   margin-left: auto;
 }
+
