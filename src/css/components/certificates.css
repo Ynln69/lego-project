@@ -1,3 +1,19 @@
+.certificates-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+.certificates-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+.certificates-text {
+  font-size: 16px;
+  line-height: 140%;
+}
+
 .certificates-title {
   margin-bottom: 48px;
 

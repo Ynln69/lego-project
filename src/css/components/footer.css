@@ -22,8 +22,13 @@
   text-transform: uppercase;
 }
 .footer-item-link {
+  display: block;
   font-size: 16px;
   line-height: 140%;
+  transition: transform 0.3s ease;
+}
+.footer-item-link:hover {
+  transform: scale(1.1);
 }
 .footer-text {
   font-size: 16px;

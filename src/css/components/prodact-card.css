@@ -1,5 +1,30 @@
 .product-card-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  justify-items: center;
+}
+.product-image {
+  width: 301px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+.product-info-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+.product-info-price {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+}
+.product-info-description {
+  font-size: 16px;
+  line-height: 140%;
 }

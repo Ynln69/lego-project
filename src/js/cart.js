@@ -1,13 +1,10 @@
-// Функція для додавання товару до корзини і збереження в localStorage
 export function addToCart(product) {
-  let cart = JSON.parse(localStorage.getItem('cart')) || []; // Отримуємо корзину з localStorage або створюємо нову
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
   const existingProduct = cart.find(item => item.id === product.id);
 
   if (existingProduct) {
-    // Якщо товар вже є в корзині, збільшуємо його кількість
     existingProduct.quantity += 1;
   } else {
-    // Якщо товар новий, додаємо його до корзини з кількістю 1
     cart.push({
       id: product.id,
       title: product.title,
@@ -17,22 +14,18 @@ export function addToCart(product) {
     });
   }
 
-  localStorage.setItem('cart', JSON.stringify(cart)); // Зберігаємо оновлену корзину у localStorage
+  localStorage.setItem('cart', JSON.stringify(cart)); 
   alert(`${product.title} було додано до корзини!`);
 }
 
-// Функція для відображення елементів корзини на сторінці корзини
 export function renderCartItems() {
   const cartList = document.getElementById('cart-list');
-
-  // Перевіряємо, чи існує корзина на сторінці
+  
   if (!cartList) {
     return;
   }
 
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-  // Очищуємо список перед додаванням нових елементів
   cartList.innerHTML = '';
 
   cart.forEach(item => {
@@ -49,7 +42,6 @@ export function renderCartItems() {
   });
 }
 
-// Викликаємо функцію renderCartItems лише на сторінці корзини
 document.addEventListener('DOMContentLoaded', () => {
   renderCartItems();
 });

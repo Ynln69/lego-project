@@ -1,21 +1,36 @@
-// Отримуємо параметр id з URL
+import { addToCart } from './cart';
 
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('id');
 
-// Завантажуємо дані з JSON-файлу
 fetch('../../data/products-data.json')
   .then(response => response.json())
   .then(data => {
-    // Знаходимо продукт за id
     const product = data.products.find(p => p.id == productId);
 
     if (product) {
-      // Відображаємо деталі продукту
-      document.getElementById('product-image').src = product.photo;
-      document.getElementById('product-price').textContent = `${product.price} PLN`;
-      document.getElementById('product-title').textContent = product.title;
-      document.getElementById('product-description').textContent = product.description;
+      const productMarkup = `
+          <div>
+            <img src="${product.photo}" alt="${product.title}" class="product-image" />
+          </div>
+          <div class="product-info">
+            <h2 class="product-info-title">${product.title}</h2>
+            <p class="product-info-price">${product.price} PLN</p>
+            <p class="product-info-description">${product.description}</p>
+            <button type="button" class="basket-btn" data-id="${product.id}">${product.button}
+              <svg width="16" height="16">
+                  <use href="../img/icon/icon-defs.svg#icon-shopping-cart"></use>
+              </svg>
+            </button>
+          </div>
+      `;
+
+      document.getElementById('product-container').innerHTML = productMarkup;
+
+      const addToCartBtn = document.querySelector('.basket-btn');
+      addToCartBtn.addEventListener('click', () => {
+        addToCart(product);
+      });
     } else {
       console.error('Продукт не знайдено');
     }
