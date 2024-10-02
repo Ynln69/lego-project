@@ -6,12 +6,24 @@
 .footer-nav-list {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 24px;
+  gap: 20px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: normal;
+    gap: 0;
+  }
 }
 .footer-nav-item {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-items: center;
+  @media (min-width: 768px) {
+    align-items: normal;
+  }
 }
 .footer-item-text {
   margin-bottom: 16px;

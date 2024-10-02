@@ -5,9 +5,12 @@
 }
 .our-products-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 32px;
   margin-bottom: 48px;
+  @media (min-width: 768px) {
+    gap: 48px;
+  }
 }
 .our-products-item {
   display: flex;

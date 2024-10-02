@@ -11,5 +11,6 @@
   }
 }
 .section {
-  padding: 64px 0;
+  padding-top: clamp(20px, calc(10px + 5vw), 64px);
+  padding-bottom: clamp(20px, calc(10px + 5vw), 64px);
 }

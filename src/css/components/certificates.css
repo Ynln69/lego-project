@@ -1,7 +1,10 @@
 .certificates-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 32px;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
 }
 .certificates-wrapper {
   display: flex;
@@ -21,9 +24,12 @@
 }
 .certificates-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
   margin-bottom: 48px;
+  @media (min-width:768px) {
+    gap: 48px;
+  }
 }
 .certificates-item {
   display: flex;
