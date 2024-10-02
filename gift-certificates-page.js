@@ -1,4 +1,4 @@
-import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */fetch("./data/certificates-data.json").then(t=>t.json()).then(t=>{const s=document.getElementById("certificates-list");t.certificates.forEach(e=>{const i=document.createElement("li");i.classList.add("certificates-item"),i.innerHTML=`
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */import"./assets/translator-BQe7IH2m.js";fetch("./data/certificates-data.json").then(t=>t.json()).then(t=>{const s=document.getElementById("certificates-list");t.certificates.forEach(e=>{const i=document.createElement("li");i.classList.add("certificates-item"),i.innerHTML=`
       <h3 class="certificates-item-title">${e.title}</h3>
         <div class="certificates-item-thumb">
           <p class="certificates-item-price">${e.price}</p>
