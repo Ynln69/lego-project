@@ -46,12 +46,6 @@
             "description": "Opis produktu",
             "price": "500  PLN",
             "button": "w koszyku"
-          },
-          {
-            "title": "Nazwa certyfikatu",
-            "description": "Opis produktu",
-            "price": "500  PLN",
-            "button": "w koszyku"
           }
     ]
   }

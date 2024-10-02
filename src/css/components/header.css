@@ -1,5 +1,5 @@
 .header {
-  padding: 32px 0;
+  padding: 18px 0;
   border-bottom: 1px solid #d9d9d9;
 }
 .header-container {
@@ -35,4 +35,21 @@
 .header-button {
   border: none;
   background-color: transparent;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.lang-btn:hover {
+  text-decoration: underline;
 }
